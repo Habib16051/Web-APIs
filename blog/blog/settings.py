@@ -37,7 +37,13 @@ INSTALLED_APPS = [
 
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework.permissions.AllowAny",
+        # "rest_framework.permissions.AllowAny", # Allows all users
+        # "rest_framework.permissions.IsAuthenticated",  # only allow authenticated user
+        # "rest_framework.permissions.IsAdminUser",  # only admins/superusers have access
+        # only authenticated users can create/update, delete, and unauthenticated person will only can read
+        "rest_framework.permissions.IsAuthenticatedOrReadOnly",
+
+
     ],
 }
 
