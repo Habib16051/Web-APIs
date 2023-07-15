@@ -1,6 +1,5 @@
 from rest_framework.routers import SimpleRouter
 from .views import PostViewSet, UserViewSet
-from django.urls import path
 
 # Routers work directly with viewsets to automatically generate URL patterns for us.
 router = SimpleRouter()
