@@ -120,6 +120,10 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#     "default": env.dj_db_url("DATABASE_URL")
+#     # new
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
